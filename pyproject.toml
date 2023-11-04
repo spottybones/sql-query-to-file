@@ -10,6 +10,8 @@ packages = [{include = "sql_query_to_file", from = "src"}]
 python = "^3.10"
 click = "^8.1.7"
 
+[tool.poetry.scripts]
+sql-query-to-file = "sql_query_to_file.cli:cli"
 
 [tool.poetry.group.tests.dependencies]
 pytest-cov = "^4.1.0"
