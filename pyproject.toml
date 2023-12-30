@@ -21,7 +21,7 @@ pytest-cov = "^4.1.0"
 ipython = "^8.19.0"
 
 [tool.coverage.paths]
-source = [ "src" ]
+source = [ "src", "*/site-packages" ]
 
 [tool.coverage.run]
 branch = true
@@ -29,6 +29,7 @@ source = ["sql_query_to_file"]
 
 [tool.coverage.report]
 show_missing = true
+fail_under = 100
 
 [build-system]
 requires = ["poetry-core"]
